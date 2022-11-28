@@ -1,0 +1,183 @@
+;   Pentatonic Bass 
+;   Meng Qi
+;   www.mengqimusic.com
+;   written in 2013.2 / ported to new shlisp in 2013.4
+
+(
+{
+
+;([short] 13 190) ([short] 13 1) ([short] 12 70) ([short] 8 80)
+
+   ([arab]
+   ([togob]
+      ([add]
+         ([major] 1)
+         ([minor] ([negwon]))
+      )
+      ([short] 13 190) ([short] 13 1) ([short] 12 70) ([short] 8 80)
+   )
+   )
+
+   ([srate] ([togob]))
+   
+   ([togoc]
+      ([add]
+         ([majorb] 1)
+         ([minorb] ([negwon]))
+      )
+      () -15 -31 -47 -63 -79 -95 -111 -127
+   )
+   
+   ([togod]
+      ([add]
+         ([majorc] 1)
+         ([minorc] ([negwon]))
+      )
+      () -15 -31 -47 -63 -79 -95 -111 -127
+   )
+
+   ([slew]
+      ([add]
+         54
+         ([square]
+            ([corpb] -128)
+            43
+            54
+         )
+      )
+      100
+      100
+   )
+   
+   ([dust] 
+      ([add]
+         ([bar] 25)
+         ([barb] 25)
+         ([barc] 25)
+         ([bard] 25)
+      )
+   )
+
+   ([swoop]
+      ([add]
+         ([square] ([bar]) 30)
+         ([square] ([barb]) 30)
+         ([square] ([barc]) 30)
+         ([square] ([bard]) 30)
+      )
+      ([add]
+         ([bar])
+         ([barc])
+      )
+      ([add]
+         ([barb])
+         ([bard])
+      )
+   )
+
+   ([swoopb]
+      ([add]
+         ([square] ([bar]) 30)
+         ([square] ([barb]) 30)
+         ([square] ([barc]) 30)
+         ([square] ([bard]) 30)
+      )
+      ([add]
+         ([bar])
+         ([bard])
+      )
+      ([add]
+         ([barb])
+         ([barc])
+      )
+   )
+
+   ([swoopc]
+      ([add]
+         ([square] ([bar]) 30)
+         ([square] ([barb]) 30)
+         ([square] ([barc]) 30)
+         ([square] ([bard]) 30)
+      )
+      ([add]
+         ([barb])
+         ([bard])
+      )
+      ([add]
+         ([bar])
+         ([barc])
+      )
+   )
+
+   ([swoopd]
+      ([add]
+         ([square] ([bar]) 30)
+         ([square] ([barb]) 30)
+         ([square] ([barc]) 30)
+         ([square] ([bard]) 30)
+      )
+      ([add]
+         ([barb])
+         ([barc])
+      )
+      ([add]
+         ([bar])
+         ([bard])
+      )
+   )
+
+   ([left]([right]
+         ([horn]
+            ([corp]
+            -10
+               ([add]
+               54
+                  ([mul] ([dust]) ([togoc]))
+                  ([mul] ([swoop]) ([togod]))
+               )
+            )
+            ([slew])
+            ([bar])
+         )
+
+         ([hornb]
+            ([corp]
+            -8
+               ([add]
+               65
+                  ([mul] ([dust]) ([togoc]))
+                  ([mul] ([swoopb]) ([togod]))
+               )
+            )
+            ([slew])
+            ([barb])
+         )
+
+         ([hornc]
+            ([corp]
+            -9
+               ([add]
+               72
+                  ([mul] ([dust]) ([togoc]))
+                  ([mul] ([swoopc]) ([togod]))
+               )
+            )
+            ([slew])
+            ([barc])
+         )
+
+         ([hornd]
+            ([corp]
+            -15
+               ([add]
+               81
+                  ([mul] ([dust]) ([togoc]))
+                  ([mul] ([swoopd]) ([togod]))
+               )
+            )
+            ([slew])
+            ([bard])
+         )
+   ))
+}
+)

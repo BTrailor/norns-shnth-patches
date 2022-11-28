@@ -1,0 +1,69 @@
+;   dual tone
+;   Meng Qi
+;   www.mengqimusic.com
+;   2013.04
+
+(
+{([lights] (corp))
+([srate]
+([add]
+   ([short] 26 180) ;E
+   ([square] ([corp] -128) 30 ([arab] ([short] 5 10))) ;C#
+   ([square] ([corp] -128) 60 ([arab] ([short] 3 230))) ;B
+   ([square] ([corp] -128) 90 ([arab] ([short] 4 80))) ;A
+   ([square] ([corp] -128) 120 ([arab] ([short] 7 120))) ;F#
+)
+)
+   
+   ([left]
+      ([horn] 
+         100
+         ([minor] 50 50)
+         ([bar])
+      )
+      
+      ([hornb]
+         ([add] ([mul] ([horn]) ([barb] 85)) 100)
+         ([minor] 50 50)
+         ([barb])
+      )
+   )
+   
+([sauce] 120 ([barc]))
+   
+   ([right]
+      ([hornc] 
+         ([add]
+               ([short] 113 58)
+         )
+         ([mul]
+            ([add]
+               100
+               ([square] ([corpb] -128) 30 ([short] -9 -120))
+               ([square] ([corpb] -128) 60 ([short] -14 -120))
+               ([square] ([corpb] -128) 90 ([short] -20 -12))
+               ;([square] ([corpb] -128) 120 ([short] -20 -12))
+            )
+            ([minord] 64 64)
+         )
+         ([bard])
+      )
+      
+      ([hornd] 
+         100
+         ([mul]
+            ([add]
+               100
+               ([square] ([sauce]) 50 -50)
+               ([square] ([sauce]) 100 -25)
+               ;([square] ([sauce]) 120 ([short] -20 -12))
+            )
+            ([minord] 64 64)
+         )
+         ([barc])
+      )
+      
+   )
+   
+}
+)

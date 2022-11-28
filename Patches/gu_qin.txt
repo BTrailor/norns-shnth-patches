@@ -1,0 +1,106 @@
+;   "Gu Qin"
+;   By Meng Qi
+;   www.mengqimusic.com
+;   2013.04
+
+{
+
+   ([togo] ([minor]) 24 27 30 36 40)
+   ([togob] ([minor]) 30 36 40 48 54)
+   ([togoc] ([minor]) 40 48 54 60 72)
+   ([togod] ([minor]) 54 60 72 80 96)
+
+   ([toggle] ([major]))
+   ([toggleb] ([majorb]))
+   ([togglec] ([majorc]))
+   ([toggled] ([majord]))
+   
+   ([left] 
+      ([wave]
+         ([add]
+            ([zither]
+               ([square] ([bar]) 20)
+               ([add]
+                  ([togo])
+                  ([horn] ([bar]) 100 ([mul] ([toggle]) ([corp])))
+                  ([dust] ([bar]) ([mul] ([toggleb]) ([corp])))
+                  ([horse] ([bar]) ([barb]) ([barc]) ([bard]) ([mul] ([togglec]) ([corp])))
+                  ([fog] ([smoke]) ([barb]) ([barc]) ([bard]) ([mul] ([toggled]) ([corp])))
+               )
+               48
+               ([corpb]) 
+               ([bar])
+            )
+
+            ([zitherb]
+               ([square] ([barb]) 20)
+                  ([add] 
+                     ([togob])
+                     ([hornb] ([barb]) 100 ([mul] ([toggle]) ([corp])))
+                     ([dustb] ([barb]) ([mul] ([toggleb]) ([corp])))
+                     ([horseb] ([barb]) ([barc]) ([bard]) ([bar]) ([mul] ([togglec]) ([corp])))
+                     ([fogb] ([smokeb]) ([barc]) ([bard]) ([bar]) ([mul] ([toggled]) ([corp])))
+                  )
+               48
+               ([corpb]) 
+               ([barb])
+            )
+
+            ([zitherc]
+               ([square] ([barc]) 20)
+                  ([add] 
+                     ([togoc])
+                     ([hornc] ([barc]) 100 ([mul] ([toggle]) ([corp])))
+                     ([dustc] ([barc]) ([mul] ([toggleb]) ([corp])))
+                     ([horsec] ([barc]) ([bard]) ([bar]) ([barb]) ([mul] ([togglec]) ([corp])))
+                     ([fogc] ([smokec]) ([bard]) ([bar]) ([barb]) ([mul] ([toggled]) ([corp])))
+                  )
+               48
+               ([corpb]) 
+               ([barc])
+            )
+
+            ([zitherd]
+               ([square] ([bard]) 20)
+                  ([add] 
+                     ([togod])
+                     ([hornd] ([bard]) 100 ([mul] ([toggle]) ([corp])))
+                     ([dustd] ([bard]) ([mul] ([toggleb] ([majorb])) ([corp])))
+                     ([horsed] ([bard]) ([bar]) ([barb]) ([barc]) ([mul] ([togglec] ([majorc])) ([corp])))
+                     ([fogd] ([smoked]) ([bar]) ([barb]) ([barc]) ([mul] ([toggled] ([majord])) ([corp])))
+                  )
+               48
+               ([corpb]) 
+               ([bard])
+            )
+         )
+         20
+         ([add] 
+            ([bar] 15) 
+            ([barb] 20) 
+            ([barc] 25) 
+            ([bard] 30)
+            35
+         )
+      )
+   )
+
+   ([right] 
+      ([waveb]
+         ([add]
+            ([zither])
+            ([zitherb])
+            ([zitherc])
+            ([zitherd])
+         )
+         20 
+         ([add] 
+            ([bar] 30) 
+            ([barb] 25) 
+            ([barc] 20) 
+            ([bard] 15)
+            35
+         )
+      )
+   )
+}

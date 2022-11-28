@@ -1,0 +1,9 @@
+(srate (short 2 (wind))) (right (left (wavef (add 
+ (horn (wheel (major)) 24 (bar 70)) 
+ (hornb (wheelb (majorb)) 80 (barb 70)) 
+ (hornc (wheelc (majorc)) 88 (barc 70)) 
+ (hornd (wheeld (majord)) 96 (bard 70))) 47 -23) 
+ 
+ 
+ 
+)) (lights (wind 10 1))

@@ -1,0 +1,25 @@
+(
+
+{
+([left]
+ ([horn] 30 10 ([bar])) 
+ ([hornb] 31 10 ([barb])) 
+ ([hornc] 32 10 ([barc])) 
+ ([hornd] 33 10 ([bard])) 
+)
+
+}
+
+{
+([left]
+ ([horn] 30 10 ([bar])) 
+)
+}
+
+
+{
+([left]
+ ([horn] 30 10 ([bar])) 
+)
+})
+

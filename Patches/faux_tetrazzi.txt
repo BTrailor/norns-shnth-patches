@@ -1,0 +1,25 @@
+{	
+(lights (corp))	
+(srate 1)
+
+([mount] ([major] 127) 64)
+([mountb] ([majorb] 127) 64)
+([mountc] ([majorc] 127) 64)
+([mountd] ([majord] 127) 64)	
+
+([mounte] ([major]) 64)
+([mountf] ([majorb]) 64)
+([mountg] ([majorc]) 64)
+([mounth] ([majord]) 64)	
+
+([horse] ([mount]) ([mounte]) 20 20 ([bar]) 100)
+([horseb] ([mountb]) ([mountf]) 20 20 ([barb]) 100)
+([horsec] ([mountc]) ([mountg]) 20 20 ([barc]) 100)
+([horsed] ([mountd]) ([mounth]) 20 20 ([bard]) 100)
+
+(pan ([horse ]) ([bar]))	
+(pan ([horseb]) ([barb]))	
+(pan ([horsec]) ([barc]))	
+(pan ([horsed]) ([bard]))	
+
+}

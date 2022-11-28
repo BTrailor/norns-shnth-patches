@@ -1,0 +1,21 @@
+(
+
+{
+
+([left] ([left]
+([water] ([square] ([bar]) 50) 1 ([salsa] ([square] ([bar]) 50) ([smoke] 44)) )
+([hornd] ([salsad] ([square] ([bard]) 50) ([mul] ([hornd]) 64 60)) 80 ([sauced] 13 ([slewd] ([bard]) 40 10)))
+([arab]
+([salt] ([smoked] ([swoop] ([majorb]) 250 160)) 80 225))
+
+
+
+([right] 
+([mul] ([zitherb]  ([saucec] 4 (dust ([square] ([barb]) 90))) ([salsab] ([square] ([barb]) 50) ([smokeb] ([corp] 30) 48)) 126) 80)
+([mul] ([zitherc] ([square] ([barc]) 50) ([salsac] ([square] ([barc]) 50) ([smokec] 20 104)) 126) 80)
+([string]([majord]) 110 110))
+
+))
+
+}
+)

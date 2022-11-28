@@ -1,0 +1,83 @@
+(
+
+{
+([left]
+ ([press] 
+  ([horn] 32 22 ([leak] ([bar]) 1))
+  ([hornc] 21 20 ([leakc] ([corp]) 1))
+ 80 10 80)
+)
+([right]
+ ([pressb] 
+  ([hornb] 32 21 ([leakb] ([barb]) 1))
+  ([hornd] 21 21 ([leakd] ([corpb]) 1))
+ 80 10 80)
+)
+([jump] ([minorb] 1))
+}
+
+{
+([srate] 20)
+([left]
+ ([arab] 
+  ([horn] 132 212 ([leak] 
+   ([bar]) 1 ))
+  ([hornc] 121 220 ([leakc] 
+   ([corp])  1 ))
+ )
+)
+([right]
+ ([arab]
+  ([hornb] 132 221 ([leakb] 
+   ([barb]) 1 ))
+  ([hornd] 121 211 ([leakd] 
+   ([corpb]) 1 ))
+ )
+)
+([jump] ([minorb] 1))
+}
+ 
+{
+([srate] ([corp] 12 16))
+([togo] (square ([bar] ) 20) 21 43 54 100 38 99)
+([togob] (square ([barb] ) 20) 21 43 54 100 38 99)
+([togoe] (square ([barc]) 20 ) 21 43 54 100 38 99)
+([togof] (square ([bard]) 20 ) 21 43 54 100 38 99)
+
+([left]
+([horn] ([togo]) ([togob]) ([toggle] ([minor])))
+([hornc] 80 36 ([majorc]))
+([press] 
+([wave] ([wind]) 80 20) 
+10)
+
+) ([right]
+([hornb] ([togof]) ([togoe]) ([toggleb] ([minord])))
+([hornc] 80 36 ([togglec] ([majord])))
+ ([smoke] ([togglef] ([majorb])))
+)
+
+([lights] ([add] ([major] 8) ([togglec] ([majord]) 4)))
+([jump] ([minorb] 1))
+} {
+([srate] 20)
+
+
+([left]
+([press]  
+([add] 
+ ([bar] ([hornc] 80 36)) 
+ ([barc] ([hornd] 81 36))) 
+40 10 80)
+
+) ([right]
+([pressb]  
+([add] 
+ ([barb] ([horne] 60 36))
+ ([bard] ([hornf] 50 36))) 
+40 10 80)
+)
+
+([jump] ([minorb] 1))
+}
+)

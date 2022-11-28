@@ -1,0 +1,67 @@
+; Stuber 
+; Meng Qi
+; www.mengqimusic.com
+; inspired by CL stuber / thanks to Peter for help
+; 2013.5
+
+(
+{
+
+([toggle] ([square] ([wind]) 15))
+([toggleb] ([toggle]))
+([togglec] ([toggleb]))
+([toggled] ([togglec]))
+([togglee] ([toggled]))
+([togglef] ([togglee]))
+([toggleg] ([togglef]))
+([toggleh] ([toggleg]))
+
+([togo] ([minor]) ([toggle]) ([toggleb]) ([togglec]) ([toggled]) ([togglee]) ([togglef]) ([toggleg]) ([toggleh]))
+([togob] ([minorb]) ([toggle]) ([toggleb]) ([togglec]) ([toggled]) ([togglee]) ([togglef]) ([toggleg]) ([toggleh]))
+([togoc] ([minorc]) ([toggle]) ([toggleb]) ([togglec]) ([toggled]) ([togglee]) ([togglef]) ([toggleg]) ([toggleh]))
+([togod] ([minord]) ([toggle]) ([toggleb]) ([togglec]) ([toggled]) ([togglee]) ([togglef]) ([toggleg]) ([toggleh]))
+([togoe] ([major]) () 15 30 45 60 75 90 105 120)
+([togof] ([majorb]) () 11 23 42 51 67 79 86 105 127)
+([togog] ([majorc]) () 9 12 24 53 60 78 99 110 48)
+([togoh] ([majord]) () 19 26 68 43 67 91 25 33 13 6 77)
+
+([left]
+
+([wave]
+   ([wind])
+   ([add] ([mul] ([togo]) ([togoe])) ([mul] ([togob]) ([togof])) ([mul] ([togoc]) ([togog])) ([mul] ([togod]) ([togoh])) ([bar]))
+   ([add] ([mul] ([togo]) ([togoh])) ([mul] ([togob]) ([togog])) ([mul] ([togoc]) ([togof])) ([mul] ([togod]) ([togoe])) ([corp]))
+   ([barb] -127 127)
+)
+
+([salt]
+   ([wind])
+   ([add] ([mul] ([togo]) ([togoe])) ([mul] ([togob]) ([togof])) ([mul] ([togoc]) ([togog])) ([mul] ([togod]) ([togoh])) ([bar]))
+   ([add] ([mul] ([togo]) ([togoh])) ([mul] ([togob]) ([togog])) ([mul] ([togoc]) ([togof])) ([mul] ([togod]) ([togoe])) ([corp]))
+   ([barb] 127 ())
+)
+
+)
+
+
+
+([right]
+
+([waveb]
+   ([wind])
+   ([add] ([mul] ([togo]) ([togof])) ([mul] ([togob]) ([togog])) ([mul] ([togoc]) ([togoe])) ([mul] ([togod]) ([togoh])) ([bard]))
+   ([add] ([mul] ([togo]) ([togog])) ([mul] ([togob]) ([togof])) ([mul] ([togoc]) ([togoh])) ([mul] ([togod]) ([togoe])) ([corpb]))
+   ([barc] -127 127)
+)
+
+([saltb]
+   ([wind])
+   ([add] ([mul] ([togo]) ([togof])) ([mul] ([togob]) ([togog])) ([mul] ([togoc]) ([togoe])) ([mul] ([togod]) ([togoh])) ([bard]))
+   ([add] ([mul] ([togo]) ([togog])) ([mul] ([togob]) ([togof])) ([mul] ([togoc]) ([togoh])) ([mul] ([togod]) ([togoe])) ([corpb]))
+   ([barc] 127 ())
+)
+
+)
+
+}
+)
